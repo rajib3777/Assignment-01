@@ -21,6 +21,32 @@ a{
     color: cyan;
 }
 
+.navbar-brand img{
+    height: 200px;
+    transition: all 0.3s ease;
+}
+
+@media(max-width:991.98px){
+    .navbar-brand img{
+    height: 150px !important;
+    transition: all 0.3s ease;
+   }
+}
+
+@media(max-width:767.98px){
+    .navbar-brand img{
+    height: 120px !important;
+    transition: all 0.3s ease;
+   }
+}
+
+@media(max-width:575.98px){
+    .navbar-brand img{
+    height: 80px !important;
+    transition: all 0.3s ease;
+   }
+}
+
 .nav-link{
     color: white !important;
     font-weight: 500;
@@ -29,6 +55,9 @@ a{
 
 .nav-link:hover{
     color: cyan;
+}
+.navbar-toggler{
+    padding: 0.15em 0.3rem;
 }
 
 .description{
@@ -54,6 +83,15 @@ a{
     width:1em;
     height: 1em;
 }
+
+.card{
+    max-width: 1200px;
+    background-color: cyan;
+    color: white;
+    display: flex;
+
+}
+
 
 .card-custom{
     background-color: #1a1a1a;
@@ -138,8 +176,9 @@ h5{
 }
 
 .card-text{
-    color:rgb(231,247,10)
+    color:rgb(212, 212, 207)
 }
+
 
 .contact01{
     margin-top: 80px;
@@ -305,3 +344,97 @@ footer .fg-lg:hover{
     height: 350px;
     width: 100%;
 }
+
+.d-flex.justify-content-center{
+    padding: 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.card{
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: cyan;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@media (max-width:767.98){
+    .card{
+        flex-direction: column;
+    }
+    
+}
+
+@media (min-width:767.98) and (max-width:991.98){
+    .card{
+        max-width: 100%;
+    }
+    .card-custom{
+        width: 80px;
+        margin: 20px auto;
+    }
+
+    .col-md-6{
+        width: 45%;
+        padding: 0 10px;
+
+    }
+
+    .carousel-inner{
+        min-height: 250px;
+    }
+
+    .carousel-item img{
+        object-fit: contain;
+        height: auto;
+        max-height: 250;
+    }
+
+    .card-body{
+        padding: 20px !important;
+    }
+    
+}
+
+
+@media (min-width:991.99){
+    .card{
+        flex-direction: row;
+    }
+
+    .col-md-6{
+        width: 50%;
+    }
+}
+
+
+.card-body{
+    padding: 30px;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.card-text{
+    margin-bottom: 15px;
+    line-break: 1.6;
+}
+
+.badge{
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+}
+
+.bi-github{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    display: inline-block;
+}
+
