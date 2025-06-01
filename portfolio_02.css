@@ -50,6 +50,10 @@ a{
     margin-top: 100px;
     font-style:sans-sarif ;
 }
+.navbar-toggler-icon{
+    width:1em;
+    height: 1em;
+}
 
 .card-custom{
     background-color: #1a1a1a;
